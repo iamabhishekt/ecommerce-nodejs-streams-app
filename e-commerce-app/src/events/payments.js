@@ -1,6 +1,6 @@
 export default class Payment {
-  constructor(subject) {
-    this.paymentSubject = this.paymentSubject;
+  constructor(paymentSubject) {
+    this.paymentSubject = paymentSubject;
   }
 
   creditCard(paymentData) {

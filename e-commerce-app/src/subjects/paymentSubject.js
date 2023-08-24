@@ -3,7 +3,7 @@ export default class PaymentSubject {
 
   //notify all the observers
   notify(data) {
-    this.#obserers.forEach(observer => observer.update(data))
+    this.#observers.forEach(observer => observer.update(data))
   }
 
   // delete observable data 
