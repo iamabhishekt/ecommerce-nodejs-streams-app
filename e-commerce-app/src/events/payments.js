@@ -3,8 +3,8 @@ export default class Payment {
     this.paymentSubject = paymentSubject;
   }
 
-  creditCard(paymentData) {
-    console.log(`\na payment occurred from ${paymentData.description}`);
-    this.paymentSubject.notify(paymentData);
+  creditCard({id, userName, age}) {
+    console.log(`\nA payment occurred from ${userName}`);
+    this.paymentSubject.notify({id, userName});
   }
 }
